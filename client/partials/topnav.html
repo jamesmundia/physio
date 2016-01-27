@@ -1,9 +1,15 @@
 <template name="topnav">
 
-<a href="/">physioRoom</a>
-	<a href="#">Profile</a>
-	<a href="#">Messages</a>
-	{{> loginButtons}}
+<div class="container">
+
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="/">physioRoom</a></li>
+  <li role="presentation"><a href="#">Injuries</a></li>
+    <li role="presentation"><a href="#">Rehab Plans</a></li>
+  <li role="presentation">{{> loginButtons}}</li>
+</ul>
+
+</div>
 
 
 </template>
