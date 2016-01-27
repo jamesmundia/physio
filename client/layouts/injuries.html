@@ -1,0 +1,18 @@
+<template name="injuries">
+
+<h2>Add Injury</h2>
+
+{{> quickForm collection="Injuries" id="insertInjuryForm" type="insert"}}
+
+<section class="injuries">
+
+	{{#if Template.subscriptionsReady}}
+    {{#each injuries}} 
+    	{{> Injury}}
+    {{/each}}
+	{{/if}}
+
+
+    </section>
+  
+</template>

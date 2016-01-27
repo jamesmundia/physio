@@ -1,0 +1,22 @@
+<template name="Injury">
+
+	<article class="injury">
+		<h3>{{player}}</h3>
+		<p>{{injury}}</p>
+		<p>{{notes}}</p>
+
+		<h4>Rehab Plan</h4>
+		{{#each rehab}}
+		<span class="rehab">{{exercise}} - {{volume}} - {{date}}</span>
+	 {{/each}}
+
+	</article>	
+
+ 	<a href="/injury/{{_id}}">View Details</a>
+
+
+ <!-- {{> quickForm collection="Injuries" id="updateInjuryForm" type="update" doc=this}} Update Injury Form  -->
+
+  <a class="btn" href="/">Back</a>
+
+</template>
